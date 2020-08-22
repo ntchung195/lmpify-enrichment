@@ -10,16 +10,16 @@ import numpy as np
 import gensim.models.keyedvectors as word2vec
 
 import matplotlib.pyplot as plt
-model=Word2Vec.load('./model/word2vec_Entertainment.model')
+model=Word2Vec.load('./model/word2vec_Covid19.model')
 # model = word2vec.KeyedVectors.load('word2vec_skipgram.model')
 # for word in model.wv.most_similar(u"chính_trị",topn=50):
 
 def flatten(lst):
     return [y for x in lst for y in x]
-pathfile = './words'
-with open(pathfile, 'r') as f:
-    words = f.readlines()
-    words = [word.strip() for word in words]
+# pathfile = './words'
+# with open(pathfile, 'r') as f:
+#     words = f.readlines()
+#     words = [word.strip() for word in words]
 
 
 def tsne_plot(model):
